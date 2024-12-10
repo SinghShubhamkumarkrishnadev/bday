@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simran</title> <!-- this text can be edited -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #808080;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 25px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    /* Centering the image and setting container size */
+    .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh; /* Height of the container */
+      width: 100%; /* Full width */
+      overflow: hidden; /* Prevent overflow */
+      flex-direction: column; /* Allow stacking of image and text */
+    }
+
+    .center-image img {
+      max-width: 100%; /* Scale down to fit container width */
+      max-height: 100%; /* Scale down to fit container height */
+      object-fit: contain; /* Ensures the full image is visible */
+    }
+
+    .image-caption {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #c3c1c1; /* Text color */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-image">
+    <img src="cat2.png" alt="Centered Image">
+    <div class="image-caption">Two cats looking at each other😺😹</div>
+  </div>
+
+  <div align="right">
+    <button class="button" style="vertical-align:middle">
+      <span><a href="/bday/challange/index.html" style="text-decoration: none; color: white;">NEXT</a></span>
+    </button>
+  </div>
+</body>
+</html>
